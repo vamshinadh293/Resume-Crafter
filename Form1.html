@@ -8,13 +8,9 @@
 </head>
 <body>
     <div class="nav-bar">    
-        <div class="nav-logo">
-            <div class="logo">
-            </div>
-        </div>
-        <div class="nav-menu"></div>  
+        <img src="logo1.png" alt="Resumer">
     </div>
-    <div class="cTemplate" hidden>
+    <div class="cTemplate" >
         <legend>Choose your Template</legend>
         <div class="box-container">
             <div class="box">
@@ -28,16 +24,43 @@
             </div>
         </div>
     </div>
-    <div class="form">
-        <h2>Personal Details</h2>
-        <p>Include your full name and at least one way for employers to reach you</p>
-        <label for="">FIRST NAME</label><input type="text">
-        <label for="">SURNAME</label><input type="text">
-        <label for="">CITY</label><input type="text">
-        <label for="">PHONE</label><input type="phone">
-        <label for="">EMAIL</label><input type="email">
+    <div class="form-Personal">
+        <form action="#">  
+            <h2>Personal Details</h2>
+            <p>Include your full name and at least one way for employers to reach you</p>
+            <label for="">FIRST NAME</label><input type="text" placeholder="Elon" required>
+            <label for="">SURNAME</label><input type="text" placeholder="Musk" required>
+            <label for="">CITY</label><input type="text" placeholder="Newyork" required>
+            <label for="">PHONE</label><input type="phone" placeholder="+1 40356 239" required>
+            <label for="">EMAIL</label><input type="email" placeholder="elonmama69@gmail.com" required>
+            <input id="button"  type="button" value="Next: Education Summary">
+        </form>
+    </div>
+    <div class="form-Education">
+        <form action="#">  
+            <h2>Education</h2>
+            <p>Include colleges, vocational programs, or training courses, even if you didn't finish</p>
+            <label for="">School Name</label><input type="text" placeholder="Indian Institute of Technology" required>
+            <label for="">School Location</label><input type="text" placeholder="Jabalpur" required>
+            <label for="">Degree</label><input type="select" placeholder="Select" required>
+            <label for="">Field of Study</label><input type="phone" placeholder="Printing Engineering" required>
+            <label for="">Graduation</label><input type="month" placeholder="June,2898" required>
 
-        <button>Next: Education Summary</button>
+            <input id="button"  type="button" value="Next: Experience">
+        </form>
+    </div>
+    <div class="form-Experience">
+        <form action="#">  
+            <h2>Experience</h2>
+            <p>Start with your most recent work. You can add volunteer work,internships etc,.</p>
+            <label for="">Job Title</label><input type="text" placeholder="Chartered Accountant" required>
+            <label for="">Employer</label><input type="text" placeholder="Snitch" required>
+            <label for="">City</label><input type="text" placeholder="Abu Dhabi" required>
+            <label for="">Start Date</label><input type="date" placeholder="Select" required>
+            <label for="">End Date</label><input type="date" placeholder="Select" required>
+
+            <input id="button"  type="button" value="Next: Skills">
+        </form>
     </div>
 </body>
 </html>
