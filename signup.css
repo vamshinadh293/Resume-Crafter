@@ -2,33 +2,30 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgba(165, 91, 86, 0.464);
+    background-color: rgb(231, 155, 57,0.2);
 }
 .container {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgb(64, 57, 57);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-top: 50px;
 }
 .logo{
-    padding-left: 103px;
     margin-right: 60px;
     margin-left: 60px;
     height: 60px;
 }
 .logo img{
-    width:60px;
+    width:100%;
 }
 h2 {
     text-align: center;
-    color:greenyellow;
+    color: #f05d5ddb;
 }
-input[type="text"],
-input[type="password"],
-input[type="submit"] {
+input{
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -37,10 +34,13 @@ input[type="submit"] {
     box-sizing: border-box;
 }
 input[type="submit"] {
-    background-color: #20bbd3;
+    background-color: #f05d5dbb;
     color: blanchedalmond;
     cursor: pointer;
 }
 input[type="submit"]:hover {
-    background-color: #45a049;
+    padding:12px;
+    font-size:medium;
+    border:3px solid #F05D5E;
+    background-color:#f05d5dda;
 }
