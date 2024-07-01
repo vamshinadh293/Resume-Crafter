@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="Form1.css">
 </head>
 <body>
-    <div class="nav-bar">    
+    <div id="nav-bar">    
         <img src="logo1.png" alt="Resumer">
     </div>
-    <div class="cTemplate" >
+    <div id="cTemplate" >
         <legend>Choose your Template</legend>
         <div class="box-container">
             <div class="box">
@@ -24,57 +24,56 @@
             </div>
         </div>
     </div>
-    <div class="form-cv">
+    <div id="form-cv">
         
             <div class="form-Personal"> 
                 <h2>Personal Details</h2>
-                <p>Include your full name and at least one way for employers to reach you</p>
+                <p>Include your full name and at least one way for employers to reach you</p><br>
                 <field>
-                    <label for="">FIRST NAME</label>
-                    <input type="text" placeholder=" Elon" required>
-                </fieldset>
-                <fieldset>
-                    <label for="">Address</label>
-                    <input type="text" placeholder=" Newyork" required>
-                </fieldset>
-                <fieldset>
-                    <label for="">PHONE</label>
-                    <input type="phone" placeholder=" +1 40356 239" required>
-                </fieldset>
-                <fieldset>
-                    <label for="">EMAIL</label>
-                    <input type="email" placeholder=" elonmama69@gmail.com" required>
-                </fieldset>        
-                <fieldset>
-                    <label for="">Proffesion</label>
-                    <input type="text" placeholder=" Pilot" required>
-                </fieldset>
-                
+                    <label for="nameF">FULL NAME</label>
+                    <input id="nameF" type="text" placeholder=" Elon" required>
+                </field>
+                <field>
+                    <label for="addressF">Address</label>
+                    <input id="addressF" type="text" placeholder=" Newyork" required>
+                </field>
+                <field>
+                    <label for="phoneF">PHONE</label>
+                    <input id="phoneF" type="phone" placeholder=" +1 40356 239" required>
+                </field>
+                <field>
+                    <label for="emailF">EMAIL</label>
+                    <input id="emailF" type="email" placeholder=" elonmama18@gmail.com" required>
+                </field>        
+                <field>
+                    <label for="proffesionF">Proffesion</label>
+                    <input id="proffesionF" type="text" placeholder=" Pilot" required>
+                </field>
+                <field>
+                    <label for="summaryF">Summary</label>
+                    <textarea id="summaryF" type="text" placeholder=" I am a senior UI/UX desiner with ......." required></textarea>
+                </field>
 
             </div>
             <div class="form-Education" >
                 <div id="EduDetails" class="form-Education">
                     <h2>Education</h2>
-                    <p>Include colleges, vocational programs, or training courses, even if you didn't finish</p>
+                    <p>Include colleges, vocational programs, or training courses, even if you didn't finish</p><br>
                     <field>
-                        <label for="schoolName">School Name</label>
-                        <input type="text" placeholder=" Indian Institute of Technology" id="schoolName" required>
+                        <label for="schoolNameF">School Name</label>
+                        <input type="text" placeholder=" Indian Institute of Technology" id="schoolNameF" required>
                     </field>
                     <field>
-                        <label for="schoolLocation">School Location</label>
-                        <input type="text" placeholder=" Jabalpur" id="schoolLocation" required>
+                        <label for="schoolLocationF">School Location</label>
+                        <input type="text" placeholder=" Jabalpur" id="schoolLocationF" required>
                     </field>
                     <field>
-                        <label for="degree">Degree</label>
-                        <input type="select" placeholder=" Select" id="degree" required>
+                        <label for="eduDescF">About Education</label>
+                        <textarea  rows="5" id="eduDescF" type="text" placeholder=" I studied class X here and ......."></textarea>
                     </field>
                     <field>
-                        <label for="">Field of Study</label>
-                        <input type="phone" placeholder=" Printing Engineering" required>
-                    </field>
-                    <field>
-                        <label for="">Graduation</label>
-                        <input type="date" placeholder=" select" required>
+                        <label for="gradDateF">Graduation</label>
+                        <input id="gradDateF" type="date" placeholder=" select" required>
                     </field>
                 </div>
                 <button onclick="addEducationButton()" class="addButton" id="addEduBtn">+ Education</button>
@@ -82,84 +81,95 @@
             <div class="form-Experience">
                 <div id="ExpDetails" class="form-Experience">
                     <h2>Experience</h2>
-                    <p>Start with your most recent work. You can add volunteer work,internships etc,.</p>
-                    <label for="">Job Title</label>
-                    <input type="text" placeholder=" Chartered Accountant" required>
-                    <label for="">Employer</label>
-                    <input type="text" placeholder=" Snitch" required>
-                    <label for="">City</label>
-                    <input type="text" placeholder=" Abu Dhabi" required>
-                    <label for="">Start Date</label>
-                    <input type="date" placeholder=" Select" required>
-                    <label for="">End Date</label>
-                    <input type="date" placeholder=" Select">
+                    <p>Start with your most recent work. You can add volunteer work,internships etc,.</p><br>
+                    <field>
+                        <label for="jobTitleF">Job Title</label>
+                        <input id="jobTitleF" type="text" placeholder=" Chartered Accountant" required>
+                    </field>
+                    <field>
+                        <label for="companyF">Employer</label>
+                        <input id="companyF" type="text" placeholder=" Snitch" required>
+                    </field>
+                    <field>
+                        <label for="jobDescF">Job Description</label>
+                        <textarea  rows="5" id="jobDescF" type="text" placeholder=" I was a senior UI/UX designer at......." ></textarea>
+                    </field>
+                    <field>
+                        <label for="startDateF">Start Date</label>
+                        <input id="startDateF" type="date" placeholder=" Select" required>
+                    </field>
+                    <field>
+                        <label for="endDateF">End Date</label>
+                        <input id="endDateF" type="date" placeholder=" Select">
+                    </field>
                 </div>
                 <button onclick="addExperienceButton()" class="addButton" id="addExperienceBtn">+ Experience</button>
             </div>
             <div id="form-Skills">
                 <h2>Skills</h2>
                 <p>Add all your skills you want to showcase</p>
-                <input type="text" placeholder=" Blockchain" id="skillsInput" required>
+                <input id="skillsInputF" type="text" placeholder=" Blockchain" >
                 <button onclick="addSkill()" class="addButton" id="addSkillsBtn">+ Skill</button>
 
                 <h2>Languages</h2>
                 <p>Add all the languages you know</p>
-                <input type="text" placeholder=" Hispano" id="langTxt" required>
+                <input id="langTxtF" type="text" placeholder=" Hispano" >
                 <button onclick="addLang()" class="addButton" id="addLangBtn">+ Language</button>
             </div>
-
-        
     </div>
-    <div class="template">
+    <div id="template">
         <div class="profile">
             <div class="profile_img">
                 <img src="default_profile.jpg" alt="" id="default_profile">
             </div>
             <div class="name">
-                <h2 id="nameT">Casey Burner</h2>
-                <p>Student</p>
+                <h2 id="nameT">Casey Baumer</h2>
+                <p id="proffesionT">Student</p>
             </div>
         </div>
         <div class="column left">
             <div class="contact">
                 <h5>CONTACT ME</h5>
                 <span id="phoneT">+91 8688084535</span> <br>
-                <span id="email">elonmama69@gmail.com</span> <br>
-                <span id="address">123 park avenue, Texas 507002</span>
+                <span id="emailT">elonmama69@gmail.com</span> <br>
+                <span id="addressT">123 park avenue, Texas 507002</span>
             </div>
             <div class="lang">
                 <h5>LANGUAGE</h5>
-                <ul>
-                    <li id="">Telugu</li>
-                    <li>English</li>
-                </ul>
+                <span id="langTxtT">Telugu</span> <br>
+                English
+                
             </div>
         </div>
         <div class="column right">
             <div class="summary">
                 <h5>Summary</h5>
-                <span id="SummaryT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, blanditiis.</span>
+                <span id="summaryT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, blanditiis.</span>
             </div>
             <div class="education">
                 <h5>EDUCATION</h5>
-                <span id="" class="heading">Nalanda University</span><br> <span class="date">22/03/2018 - 22/03/2021</span><br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                <span id="schoolNameT" class="heading">Nalanda University</span>,<span id="schoolLocationT">Bihar</span><br> <span id="gradDateT" class="date">22/03/2018 - 22/03/2021</span><br>
+                <span id="eduDescT">Lorem ipsum dolor sit amet consectetur adipisicing elit.spa </span> <br>
                 <span class="heading">Jawahar Navodaya Vidyalaya</span> <br><span class="date">22/03/2018 - 22/03/2021</span> <br>
                 Lorem ipsum dolor sit amet.
             </div>
             <div class="skills">
                 <h5>SKILLS</h5>
-                <ul>
-                    <li id="">JavaScript</li>
-                    <li id="">HTML & CSS</li>
-                </ul>
+                <span id="skillsInputT">JavaScript</span> <br>
+                HTML & CSS
             </div>
             <div class="experience">
                 <h5>EXPERIENCE</h5>
-                <span class="heading" id="">Assistant Engineer</span >  Tesla Inc  <br><span class="date">22/03/2018 - 22/03/2021</span><br>
-                Lorem ipsum dolor sit 
+                <span class="heading" id="jobTitleT">Assistant Engineer</span >, <span id="companyT"> Tesla Inc </span> <br><span id="startDateT" class="date">22/03/2018</span> - <span id="endDateT" class="date">22/03/2021</span><br>
+
             </div>
         </div>
+    </div>
+    <div class="generate-Cv">
+        <button onclick="generateCv();"  id="generateBtn">Generate CV</button>
+    </div>
+    <div class="print-Cv">
+        <button onclick="printCv()"  id="printBtn">Print CV</button>
     </div>
     <script src="script.js"></script>
 </body>
